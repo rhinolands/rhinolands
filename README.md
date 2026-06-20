@@ -45,7 +45,9 @@
 
 | | |
 |---|---|
-| 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure** — self-hosted LLM serving (vLLM/AKS), MCP agent orchestration, model gateway, RAG, and the agent↔LLM security model, on a Zero-Trust foundation. |
+| 🤖 **[mcp-agent-starter](https://github.com/rhinolands/mcp-agent-starter)** | A minimal **MCP server** with the security model production agents need — per-agent least privilege, audit log, two-step **human-confirm gate** on writes. |
+| 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure** — self-hosted LLM serving (vLLM/AKS), MCP orchestration, model gateway, RAG, Zero-Trust. |
+| 🧠 **[agent-knowledge-base](https://github.com/rhinolands/agent-knowledge-base)** | An **agent-readable KB** (concept/reference/log buckets) + a stdlib indexer that lints, chunks for RAG, and emits a capability map. Context engineering as code. |
 | 🛡️ **[content-mask](https://github.com/rhinolands/content-mask)** | A **default-deny privacy gate** for AI-generated content — masks known names, blocks IPs / emails / hostnames. Fail-closed by design. |
 
 ---
