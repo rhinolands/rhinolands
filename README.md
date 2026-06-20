@@ -1,25 +1,56 @@
-# Gustavo Norymberg
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0078D4&height=190&section=header&text=Gustavo%20Norymberg&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%26%20Agentic%20Platform%20Architect%20%C2%B7%20Azure&descSize=20&descAlignY=60" alt="header"/>
+</p>
 
-### AI & Agentic Platform Architect · Azure · Production AI Infrastructure
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Production+agentic+AI+on+Azure;Multi-agent+orchestration+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+vLLM;Zero-Trust+landing+zones+%C2%B7+everything+as+code;From+POC+to+governed%2C+monitored+production" alt="tagline"/>
+</p>
 
-20 years architecting and delivering enterprise cloud infrastructure — now building **production agentic-AI platforms** on Azure. I design the systems that take AI from proof-of-concept to a governed, monitored production service, and I lead the teams that ship them.
-
----
-
-**What I build**
-- 🤖 **Agentic systems** — multi-agent orchestration over MCP, RAG / vector retrieval, evaluation harnesses, AI guardrails
-- 🧠 **LLM serving** — self-hosted open-weight models on AKS GPU (vLLM), model gateways (APIM), LLM cost & reliability ops
-- ☁️ **Enterprise Azure** — Zero-Trust landing zones, hub-spoke networking, IaC (Terraform / AVM / ALZ), CI/CD
-- 🚀 **Delivery & leadership** — pre-sales → architecture → production · team leadership
-
-**Toolbox**
-
-`Azure` · `AKS` · `vLLM` · `RAG / vector search` · `MCP` · `Anthropic & OpenAI APIs` · `Llama Guard` · `Terraform / AVM` · `Azure API Management` · `Entra ID / Zero-Trust` · `Azure DevOps`
-
-**Featured**
-- 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** — a reference pattern for production agentic AI on Azure (self-hosted LLM serving, RAG, MCP agent orchestration, model gateway, Zero-Trust)
-- 🛡️ **[content-mask](https://github.com/rhinolands/content-mask)** — a default-deny privacy/PII scrubber for AI-generated content
+<p align="center">
+  <a href="https://www.linkedin.com/in/gustavonorymberg/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:rhinom@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <img src="https://img.shields.io/badge/Israel-555555?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Israel"/>
+  <img src="https://img.shields.io/badge/Open_to-AI%2FAgentic_Architect_%26_Lead-2ea44f?style=for-the-badge" alt="Open to work"/>
+</p>
 
 ---
 
-📍 Israel · 💼 open to AI / agentic-platform **architect & lead** roles · ✉️ rhinom@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/gustavonorymberg)
+### 👋 About
+
+20 years architecting and delivering **enterprise cloud infrastructure** — now building **production agentic-AI platforms** on Azure. I design the systems that take AI from proof-of-concept to a *governed, monitored production service*, and I lead the teams that ship them.
+
+### 🚀 What I build
+
+- 🤖 **Agentic systems** — multi-agent orchestration over MCP · RAG / vector retrieval · evaluation harnesses · AI guardrails
+- 🧠 **LLM serving** — self-hosted open-weight models on AKS GPU (vLLM) · model gateways (APIM) · LLM cost & reliability ops
+- ☁️ **Enterprise Azure** — Zero-Trust landing zones · hub-spoke networking · IaC (Terraform / AVM / ALZ) · CI/CD
+- 🧭 **Delivery & leadership** — pre-sales → architecture → production · team leadership
+
+### 🧰 Toolbox
+
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![AKS](https://img.shields.io/badge/AKS-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white)
+
+![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square)
+![RAG](https://img.shields.io/badge/RAG_%2F_vector-4B8BBE?style=flat-square)
+![vLLM](https://img.shields.io/badge/vLLM-FF6F61?style=flat-square)
+![Anthropic](https://img.shields.io/badge/Anthropic_API-D4A27F?style=flat-square)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
+![Entra ID](https://img.shields.io/badge/Entra_ID_%2F_Zero--Trust-0078D4?style=flat-square)
+
+### 📂 Featured
+
+| | |
+|---|---|
+| 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure** — self-hosted LLM serving (vLLM/AKS), MCP agent orchestration, model gateway, RAG, and the agent↔LLM security model, on a Zero-Trust foundation. |
+| 🛡️ **[content-mask](https://github.com/rhinolands/content-mask)** | A **default-deny privacy gate** for AI-generated content — masks known names, blocks IPs / emails / hostnames. Fail-closed by design. |
+
+---
+
+<p align="center">
+  <i>📍 Israel · open to AI / agentic-platform <b>architect &amp; lead</b> roles · let's build clouds that think.</i>
+</p>
