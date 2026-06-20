@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0078D4&height=190&section=header&text=Gustavo%20Norymberg&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%26%20Agentic%20Platform%20Architect%20%C2%B7%20Azure&descSize=20&descAlignY=60" alt="header"/>
-</p>
+<h1 align="center">Gustavo Norymberg</h1>
+<h3 align="center">AI &amp; Agentic Platform Architect · Azure · Production AI Infrastructure</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Production+agentic+AI+on+Azure;Multi-agent+orchestration+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+vLLM;Zero-Trust+landing+zones+%C2%B7+everything+as+code;From+POC+to+governed%2C+monitored+production" alt="tagline"/>
