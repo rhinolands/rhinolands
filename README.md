@@ -45,6 +45,8 @@
 
 | | |
 |---|---|
+| 🚪 **[agent-gateway-apim](https://github.com/rhinolands/agent-gateway-apim)** | A **governed MCP / A2A gateway on Azure APIM** — Terraform/AVM, Entra **app-only identity**, validate-JWT, managed identity to the backend, rate-limit & audit. **CI-validated + deploy-proven.** |
+| 🤝 **[agent-gateway-a2a](https://github.com/rhinolands/agent-gateway-a2a)** | **HLD/LLD reference** for an agent-to-agent gateway boundary — single governed action surface, **least-privilege persona tokens**, propose→confirm on writes, gateway-level audit. |
 | 🤖 **[mcp-agent-starter](https://github.com/rhinolands/mcp-agent-starter)** | A minimal **MCP server** with the security model production agents need — per-agent least privilege, audit log, two-step **human-confirm gate** on writes. |
 | 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure** — self-hosted LLM serving (vLLM/AKS), MCP orchestration, model gateway, RAG, Zero-Trust. |
 | 🧠 **[agent-knowledge-base](https://github.com/rhinolands/agent-knowledge-base)** | An **agent-readable KB** (concept/reference/log buckets) + a stdlib indexer that lints, chunks for RAG, and emits a capability map. Context engineering as code. |
