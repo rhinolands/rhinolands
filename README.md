@@ -21,6 +21,7 @@
 ### 🚀 What I build
 
 - 🤖 **Agentic systems** — multi-agent orchestration over MCP · RAG / vector retrieval · evaluation harnesses · AI guardrails
+- 🛡️ **Agent governance & AI security** — policy-as-code (**OPA/Rego**) · least-privilege per-agent identity · MCP tool-call and A2A delegation boundaries · fail-closed enforcement · tamper-evident audit — built end-to-end in **[aegis](https://github.com/rhinolands/aegis)**
 - 🧠 **LLM serving** — self-hosted open-weight models on AKS GPU (vLLM) · model gateways (APIM) · LLM cost & reliability ops
 - ☁️ **Enterprise Azure** — Zero-Trust landing zones · hub-spoke networking · IaC (Terraform / AVM / ALZ) · CI/CD
 - 🧭 **Delivery & leadership** — pre-sales → architecture → production · team leadership
