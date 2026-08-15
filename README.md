@@ -16,15 +16,15 @@
 
 ### 👋 About
 
-20 years architecting and delivering **enterprise cloud infrastructure** — now building **production agentic-AI platforms** on Azure. I design the systems that take AI from proof-of-concept to a *governed, monitored production service*, and I lead the teams that ship them.
+20 years architecting and delivering **enterprise cloud infrastructure**, now building **production agentic-AI platforms** on Azure. I design the systems that take AI from proof-of-concept to a *governed, monitored production service*, and I lead the teams that ship them. I publish working code and writing on agent governance.
 
 ### 🚀 What I build
 
-- 🤖 **Agentic systems** — multi-agent orchestration over MCP · RAG / vector retrieval · evaluation harnesses · AI guardrails
-- 🛡️ **Agent governance & AI security** — policy-as-code (**OPA/Rego**) · least-privilege per-agent identity · MCP tool-call and A2A delegation boundaries · fail-closed enforcement · tamper-evident audit — built end-to-end in **[aegis](https://github.com/rhinolands/aegis)**
-- 🧠 **LLM serving** — self-hosted open-weight models on AKS GPU (vLLM) · model gateways (APIM) · LLM cost & reliability ops
-- ☁️ **Enterprise Azure** — Zero-Trust landing zones · hub-spoke networking · IaC (Terraform / AVM / ALZ) · CI/CD
-- 🧭 **Delivery & leadership** — pre-sales → architecture → production · team leadership
+- 🤖 **Agentic systems:** multi-agent orchestration over MCP · RAG / vector retrieval · evaluation harnesses · AI guardrails
+- 🛡️ **Agent governance & AI security:** policy-as-code (**OPA/Rego**) · least-privilege per-agent identity · MCP tool-call and A2A delegation boundaries · fail-closed enforcement · tamper-evident audit, built end-to-end in **[aegis](https://github.com/rhinolands/aegis)**
+- 🧠 **LLM serving:** self-hosted open-weight models on AKS GPU (vLLM) · model gateways (APIM) · LLM cost & reliability ops
+- ☁️ **Enterprise Azure:** Zero-Trust landing zones · hub-spoke networking · IaC (Terraform / AVM / ALZ) · CI/CD
+- 🧭 **Delivery & leadership:** pre-sales → architecture → production · team leadership
 
 ### 🧰 Toolbox
 
@@ -46,13 +46,13 @@
 
 | | |
 |---|---|
-| 🛡️ **[aegis](https://github.com/rhinolands/aegis)** — *flagship* | **Agent governance gateway — running code, not a diagram.** One enforcement point for agent ingress, A2A delegation, MCP tool egress and LLM calls. **OPA/Rego deny-by-default compiled to WASM** and evaluated in-process · least-privilege credential store, so an agent never holds the backend token · fail-closed on every path · **tamper-evident hash-chained audit** that catches edits *and* deletions even when the database trigger is bypassed · crypto-shredding for GDPR erasure without breaking the chain. TypeScript + Postgres, Apache-2.0. *v0.1 in progress — 48 tests, TDD, every commit reviewed.* |
-| 🚪 **[agent-gateway-apim](https://github.com/rhinolands/agent-gateway-apim)** | The same governance model as an **Azure APIM deployment flavour** — Terraform/AVM, Entra **app-only identity**, validate-JWT, managed identity to the backend, rate-limit & audit. **CI-validated + deploy-proven.** |
-| 🤝 **[agent-gateway-a2a](https://github.com/rhinolands/agent-gateway-a2a)** | The **HLD/LLD + threat model** the gateway work is built on — single governed action surface, **least-privilege persona tokens**, propose→confirm on writes, gateway-level audit. |
-| 🤖 **[mcp-agent-starter](https://github.com/rhinolands/mcp-agent-starter)** | A minimal **MCP server** with the security model production agents need — per-agent least privilege, audit log, two-step **human-confirm gate** on writes. |
-| 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure** — self-hosted LLM serving (vLLM/AKS), MCP orchestration, model gateway, RAG, Zero-Trust. Now with a hands-on **[RAG security-trimming lab](https://github.com/rhinolands/azure-ai-platform-reference-architecture/tree/main/labs/rag-security-trimming)** — retrieval under the user's Entra identity on Azure AI Search, proven end-to-end with the real failure modes. |
+| 🛡️ **[aegis](https://github.com/rhinolands/aegis)** · *flagship* | **Agent governance gateway: running code, not a diagram.** One enforcement point for agent ingress, A2A delegation, MCP tool egress and LLM calls. **OPA/Rego deny-by-default compiled to WASM** and evaluated in-process · least-privilege credential store, so an agent never holds the backend token · fail-closed on every path · **tamper-evident hash-chained audit** that catches edits *and* deletions even when the database trigger is bypassed · crypto-shredding for GDPR erasure without breaking the chain. TypeScript + Postgres, Apache-2.0. *v0.1 in progress: 48 tests, TDD, every commit reviewed.* |
+| 🚪 **[agent-gateway-apim](https://github.com/rhinolands/agent-gateway-apim)** | The same governance model as an **Azure APIM deployment flavour**: Terraform/AVM, Entra **app-only identity**, validate-JWT, managed identity to the backend, rate-limit & audit. **CI-validated + deploy-proven.** |
+| 🤝 **[agent-gateway-a2a](https://github.com/rhinolands/agent-gateway-a2a)** | The **HLD/LLD + threat model** the gateway work is built on: single governed action surface, **least-privilege persona tokens**, propose→confirm on writes, gateway-level audit. |
+| 🤖 **[mcp-agent-starter](https://github.com/rhinolands/mcp-agent-starter)** | A minimal **MCP server** with the security model production agents need: per-agent least privilege, audit log, two-step **human-confirm gate** on writes. |
+| 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure**: self-hosted LLM serving (vLLM/AKS), MCP orchestration, model gateway, RAG, Zero-Trust. Now with a hands-on **[RAG security-trimming lab](https://github.com/rhinolands/azure-ai-platform-reference-architecture/tree/main/labs/rag-security-trimming)**: retrieval under the user's Entra identity on Azure AI Search, proven end-to-end with the real failure modes. |
 | 🧠 **[agent-knowledge-base](https://github.com/rhinolands/agent-knowledge-base)** | An **agent-readable KB** (concept/reference/log buckets) + a stdlib indexer that lints, chunks for RAG, and emits a capability map. Context engineering as code. |
-| 🛡️ **[content-mask](https://github.com/rhinolands/content-mask)** | A **default-deny privacy gate** for AI-generated content — masks known names, blocks IPs / emails / hostnames. Fail-closed by design. |
+| 🛡️ **[content-mask](https://github.com/rhinolands/content-mask)** | A **default-deny privacy gate** for AI-generated content: masks known names, blocks IPs / emails / hostnames. Fail-closed by design. |
 
 ---
 
