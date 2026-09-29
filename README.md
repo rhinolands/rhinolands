@@ -1,22 +1,23 @@
 <h1 align="center">Gustavo Norymberg</h1>
-<h3 align="center">AI &amp; Agentic Platform Architect · Azure · Production AI Infrastructure</h3>
+<h3 align="center">Principal AI Platform &amp; Governance Architect · Azure · Agentic Security</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Production+agentic+AI+on+Azure;Multi-agent+orchestration+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+vLLM;Zero-Trust+landing+zones+%C2%B7+everything+as+code;From+POC+to+governed%2C+monitored+production" alt="tagline"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Enforcement+layer+for+AI+agents;Agent+governance+%C2%B7+least+privilege+%C2%B7+audit;Identity-aware+RAG+%C2%B7+self-hosted+inference;Zero-Trust+landing+zones+%C2%B7+everything+as+code" alt="tagline"/>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/gustavonorymberg/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:rhinom@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://gustavo.rhinojedi.dev"><img src="https://img.shields.io/badge/Website-gustavo.rhinojedi.dev-0E7490?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
   <img src="https://img.shields.io/badge/Israel-555555?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Israel"/>
-  <img src="https://img.shields.io/badge/Open_to-AI%2FAgentic_Architect_%26_Lead-2ea44f?style=for-the-badge" alt="Open to work"/>
+  <img src="https://img.shields.io/badge/Open_to-Principal_%2F_Staff_AI_roles-2ea44f?style=for-the-badge" alt="Open to work"/>
 </p>
 
 ---
 
 ### 👋 About
 
-20 years architecting and delivering **enterprise cloud infrastructure**, now building **production agentic-AI platforms** on Azure. I design the systems that take AI from proof-of-concept to a *governed, monitored production service*, and I lead the teams that ship them. I publish working code and writing on agent governance.
+Twenty years in **enterprise infrastructure and network security**, now designing and governing the **agent and LLM platforms** that regulated enterprises run in production. I build the enforcement layer for AI: agent gateways, identity-aware RAG, self-hosted inference, and the zero-trust landing zones underneath them. Author of **[aegis](https://github.com/rhinolands/aegis)**, an open-source agent-governance gateway. More at **[gustavo.rhinojedi.dev](https://gustavo.rhinojedi.dev)**.
 
 ### 🚀 What I build
 
@@ -57,5 +58,5 @@
 ---
 
 <p align="center">
-  <i>📍 Israel · open to AI / agentic-platform <b>architect &amp; lead</b> roles · let's build clouds that think.</i>
+  <i>📍 Israel · open to <b>Principal / Staff AI architect</b> roles · let's build clouds that think.</i>
 </p>
