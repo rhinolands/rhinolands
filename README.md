@@ -1,5 +1,5 @@
 <h1 align="center">Gustavo Norymberg</h1>
-<h3 align="center">Principal AI Platform &amp; Governance Architect · Azure · Agentic Security</h3>
+<h3 align="center">AI Platform &amp; Governance Architect · Azure · Agentic Security</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Enforcement+layer+for+AI+agents;Agent+governance+%C2%B7+least+privilege+%C2%B7+audit;Identity-aware+RAG+%C2%B7+self-hosted+inference;Zero-Trust+landing+zones+%C2%B7+everything+as+code" alt="tagline"/>
