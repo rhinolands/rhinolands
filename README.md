@@ -2,7 +2,7 @@
 <h3 align="center">AI Platform &amp; Governance Architect · Azure · Agentic Security</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Enforcement+layer+for+AI+agents;Agent+governance+%C2%B7+least+privilege+%C2%B7+audit;Identity-aware+RAG+%C2%B7+self-hosted+inference;Zero-Trust+landing+zones+%C2%B7+everything+as+code" alt="tagline"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Enforcement+layer+for+AI+agents;Agent+governance+%C2%B7+least+privilege+%C2%B7+audit;Fifteen+years+of+network+security+before+agents;Zero-Trust+landing+zones+%C2%B7+everything+as+code" alt="tagline"/>
 </p>
 
 <p align="center">
@@ -17,15 +17,22 @@
 
 ### 👋 About
 
-Twenty years in **enterprise infrastructure and network security**, now designing and governing the **agent and LLM platforms** that regulated enterprises run in production. I build the enforcement layer for AI: agent gateways, identity-aware RAG, self-hosted inference, and the zero-trust landing zones underneath them. Author of **[aegis](https://github.com/rhinolands/aegis)**, an open-source agent-governance gateway. More at **[gustavo.rhinojedi.dev](https://gustavo.rhinojedi.dev)**.
+I build the enforcement layer for AI agents: **policy in the call path, scoped credentials, and audit that can be verified**. Author of **[aegis](https://github.com/rhinolands/aegis)**, an open-source agent-governance gateway. Before agents, **fifteen years in network security and operations**: DDoS defense and firewalls at national carriers, including a year inside a security vendor's R&D. Then cloud platforms, designed and taken to production. More at **[gustavo.rhinojedi.dev](https://gustavo.rhinojedi.dev)**.
 
 ### 🚀 What I build
 
-- 🤖 **Agentic systems:** multi-agent orchestration over MCP · RAG / vector retrieval · evaluation harnesses · AI guardrails
 - 🛡️ **Agent governance & AI security:** policy-as-code (**OPA/Rego**) · least-privilege per-agent identity · MCP tool-call and A2A delegation boundaries · fail-closed enforcement · tamper-evident audit, built end-to-end in **[aegis](https://github.com/rhinolands/aegis)**
-- 🧠 **LLM serving:** self-hosted open-weight models on AKS GPU (vLLM) · model gateways (APIM) · LLM cost & reliability ops
-- ☁️ **Enterprise Azure:** Zero-Trust landing zones · hub-spoke networking · IaC (Terraform / AVM / ALZ) · CI/CD
+- 🤖 **Agentic systems:** MCP servers with per-agent default deny · agent tooling in daily use (six MCP servers, 50+ skills, eleven agents) · evaluation harnesses · a gate where reviewer agents must challenge every deliverable before release
+
+### 📐 What I design and deliver
+
+- 🧠 **LLM platforms:** high-level design for self-hosted open-weight LLM serving on AKS GPU (vLLM), with API Management as the model gateway and single audit point, and safety checks around agent orchestration
+- ☁️ **Enterprise Azure:** Zero-Trust landing zones in production · hub-spoke networking · IaC (Terraform / AVM / ALZ) · CI/CD
 - 🧭 **Delivery & leadership:** pre-sales → architecture → production · team leadership
+
+### 🔐 Security roots
+
+- 🌐 **Fifteen years of network security and operations:** DDoS defense and firewalls at national carriers · beta and field trials of security appliances inside a vendor's R&D, on customers' mirrored traffic · datacenter hosting and service assurance for enterprise customers
 
 ### 🧰 Toolbox
 
@@ -43,15 +50,20 @@ Twenty years in **enterprise infrastructure and network security**, now designin
 ![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
 ![Entra ID](https://img.shields.io/badge/Entra_ID_%2F_Zero--Trust-0078D4?style=flat-square)
 
+![Network security](https://img.shields.io/badge/Network_security-7F1D1D?style=flat-square)
+![DDoS defense](https://img.shields.io/badge/DDoS_defense-991B1B?style=flat-square)
+![Firewalls](https://img.shields.io/badge/Firewalls-9A3412?style=flat-square)
+![OPA / Rego](https://img.shields.io/badge/OPA_%2F_Rego-566366?style=flat-square)
+
 ### 📂 Featured
 
 | | |
 |---|---|
-| 🛡️ **[aegis](https://github.com/rhinolands/aegis)** · *flagship* | **Agent governance gateway: running code, not a diagram.** One enforcement point for agent ingress, A2A delegation, MCP tool egress and LLM calls. **OPA/Rego deny-by-default compiled to WASM** and evaluated in-process · least-privilege credential store, so an agent never holds the backend token · fail-closed on every path · **tamper-evident hash-chained audit** that catches edits, deletions *and* truncation even when the database triggers are bypassed · crypto-shredding for GDPR erasure without breaking the chain. **[THREAT_MODEL.md](https://github.com/rhinolands/aegis/blob/main/THREAT_MODEL.md)** maps every control to the OWASP LLM Top 10 and the agentic threat model, with explicit non-goals. A runnable 8-step demo ends with an injected-instruction scenario that shows what least privilege contains and what it does not. TypeScript + Postgres, Apache-2.0. *v0.1 complete: tested, CI green, every commit reviewed.* |
+| 🛡️ **[aegis](https://github.com/rhinolands/aegis)** · *flagship* | **Agent governance gateway: running code, not a diagram.** One enforcement point for agent ingress, A2A delegation, MCP tool egress and LLM calls. **OPA/Rego deny-by-default compiled to WASM** and evaluated in-process · scoped credential injection, so an agent never holds the backend token · fail-closed on every path · **tamper-evident hash-chained audit** that catches edits, deletions *and* truncation even when the database triggers are bypassed · crypto-shredding for GDPR erasure without breaking the chain. **[THREAT_MODEL.md](https://github.com/rhinolands/aegis/blob/main/THREAT_MODEL.md)** maps every control to the OWASP LLM Top 10 and the agentic threat model, with explicit non-goals. A runnable 8-step demo ends with an injected-instruction scenario that shows what least privilege contains and what it does not. TypeScript + Postgres, Apache-2.0. *v0.1 complete: tested, CI green, every commit reviewed.* |
 | 🚪 **[agent-gateway-apim](https://github.com/rhinolands/agent-gateway-apim)** | The same governance model as an **Azure APIM deployment flavour**: Terraform/AVM, Entra **app-only identity**, validate-JWT, managed identity to the backend, rate-limit & audit. **CI-validated + deploy-proven.** |
 | 🤝 **[agent-gateway-a2a](https://github.com/rhinolands/agent-gateway-a2a)** | The **HLD/LLD + threat model** the gateway work is built on: single governed action surface, **least-privilege persona tokens**, propose→confirm on writes, gateway-level audit. |
 | 🤖 **[mcp-agent-starter](https://github.com/rhinolands/mcp-agent-starter)** | A minimal **MCP server** with the security model production agents need: per-agent least privilege, audit log, two-step **human-confirm gate** on writes. |
-| 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure**: self-hosted LLM serving (vLLM/AKS), MCP orchestration, model gateway, RAG, Zero-Trust. Now with a hands-on **[RAG security-trimming lab](https://github.com/rhinolands/azure-ai-platform-reference-architecture/tree/main/labs/rag-security-trimming)**: retrieval under the user's Entra identity on Azure AI Search, proven end-to-end with the real failure modes. |
+| 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure**: self-hosted LLM serving (vLLM/AKS), MCP orchestration, model gateway, RAG, Zero-Trust. Now with a hands-on **[RAG security-trimming lab](https://github.com/rhinolands/azure-ai-platform-reference-architecture/tree/main/labs/rag-security-trimming)** on Microsoft's reference retrieval stack: document-level security trimming under the user's Entra identity on Azure AI Search, turned on and proven. One ACL value changed flips a document between cited and trimmed. |
 | 🧠 **[agent-knowledge-base](https://github.com/rhinolands/agent-knowledge-base)** | An **agent-readable KB** (concept/reference/log buckets) + a stdlib indexer that lints, chunks for RAG, and emits a capability map. Context engineering as code. |
 | 🛡️ **[content-mask](https://github.com/rhinolands/content-mask)** | A **default-deny privacy gate** for AI-generated content: masks known names, blocks IPs / emails / hostnames. Fail-closed by design. |
 
