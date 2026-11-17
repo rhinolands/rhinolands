@@ -1,5 +1,5 @@
 <h1 align="center">Gustavo Norymberg</h1>
-<h3 align="center">AI Platform &amp; Governance Architect · Azure · Agentic Security</h3>
+<h3 align="center">Cloud Solutions Architect · AI Platform · Azure</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=0078D4&center=true&vCenter=true&width=640&lines=Enforcement+layer+for+AI+agents;Agent+governance+%C2%B7+least+privilege+%C2%B7+audit;Fifteen+years+of+network+security+before+agents;Zero-Trust+landing+zones+%C2%B7+everything+as+code" alt="tagline"/>
@@ -17,11 +17,11 @@
 
 ### 👋 About
 
-I build the enforcement layer for AI agents: **policy in the call path, scoped credentials, and audit that can be verified**. Author of **[aegis](https://github.com/rhinolands/aegis)**, an open-source agent-governance gateway. Before agents, **fifteen years in network security and operations**: DDoS defense and firewalls at national carriers, including a year inside a security vendor's R&D. Then cloud platforms, designed and taken to production. More at **[gustavo.rhinojedi.dev](https://gustavo.rhinojedi.dev)**.
+Cloud solutions architect for AI platforms on Azure. I build **enforcement points for AI agents**: a gateway on Azure API Management that fails closed and logs every deny, and MCP servers with default-deny capabilities and audit. Before agents, **fifteen years in network security and operations**: DDoS defense and firewalls at national carriers, including a year inside a security vendor's R&D. Then cloud platforms, designed and taken to production. More at **[gustavo.rhinojedi.dev](https://gustavo.rhinojedi.dev)**.
 
 ### 🚀 What I build
 
-- 🛡️ **Agent governance & AI security:** policy-as-code (**OPA/Rego**) · least-privilege per-agent identity · MCP tool-call and A2A delegation boundaries · fail-closed enforcement · tamper-evident audit, built end-to-end in **[aegis](https://github.com/rhinolands/aegis)**
+- 🛡️ **Agent governance & AI security:** deny-by-default enforcement in front of agents · per-agent identity · fail-closed validation · every deny logged · human confirmation on writes
 - 🤖 **Agentic systems:** MCP servers with per-agent default deny · agent tooling in daily use (MCP servers, skills and agents) · evaluation harnesses · a gate where reviewer agents must challenge every deliverable before release
 
 ### 📐 What I design and deliver
@@ -59,8 +59,7 @@ I build the enforcement layer for AI agents: **policy in the call path, scoped c
 
 | | |
 |---|---|
-| 🛡️ **[aegis](https://github.com/rhinolands/aegis)** · *flagship* | **Agent governance gateway: running code, not a diagram.** One enforcement point that authenticates every agent and governs A2A delegation, MCP tool egress and LLM calls. **OPA/Rego deny-by-default compiled to WASM** and evaluated in-process · scoped credential injection, so an agent never holds the backend token · fail-closed on policy, budget and upstream errors · **tamper-evident hash-chained audit**: with the database triggers bypassed, verification still catches an edited row, a deleted row and an emptied table, and a consistent owner rewrite is caught against an external export · payloads encrypted under a per-agent key, so destroying the key leaves the chain intact (no erasure command yet). **[THREAT_MODEL.md](https://github.com/rhinolands/aegis/blob/main/THREAT_MODEL.md)** maps every control to the OWASP LLM Top 10, MITRE ATLAS and the agentic threat model, with explicit non-goals. A runnable 8-step demo ends with an injected-instruction scenario that shows what least privilege contains and what it does not. **Runs against a live Claude agent** (Claude Agent SDK): every tool call goes through aegis, with optional **argument-level rules** per tool, and a rule-graded eval whose run logs are in the repo. Allowlist only, 9 of 9 harmful calls through allowed tools got through. With argument rules, 10 of 10 scripted and 3 of 3 live secret-file reads were blocked, and 18 of 18 benign calls were still allowed. TypeScript + Postgres, Apache-2.0. *v0.1: 216 automated tests, CI on every pull request, [known gaps stated up front](https://gustavo.rhinojedi.dev).* |
-| 🚪 **[agent-gateway-apim](https://github.com/rhinolands/agent-gateway-apim)** | The same governance model as an **Azure APIM deployment flavour**: Terraform/AVM, Entra **app-only identity**, validate-JWT, managed identity to the backend, rate-limit & audit. **CI-validated.** |
+| 🚪 **[agent-gateway-apim](https://github.com/rhinolands/agent-gateway-apim)** | The enforcement point for AI agents on **Azure API Management**: Terraform/AVM, Entra **app-only identity**, validate-JWT, managed identity to the backend, rate-limit & audit. **CI-validated.** |
 | 🤝 **[agent-gateway-a2a](https://github.com/rhinolands/agent-gateway-a2a)** | The **HLD/LLD + threat model** the gateway work is built on: single governed action surface, **per-agent app-only identity**, deny by default, an optional confirm step for dangerous tools, gateway-level audit. |
 | 🤖 **[mcp-agent-starter](https://github.com/rhinolands/mcp-agent-starter)** | A minimal **MCP server** with the security model production agents need: capability checks with deny by default, audit log, two-step **propose and confirm** on writes. |
 | 📐 **[azure-ai-platform-reference-architecture](https://github.com/rhinolands/azure-ai-platform-reference-architecture)** | A reference pattern for **production agentic AI on Azure**: self-hosted LLM serving (vLLM/AKS), MCP orchestration, model gateway, RAG, Zero-Trust. Now with a reproducible **[RAG security-trimming lab](https://github.com/rhinolands/azure-ai-platform-reference-architecture/tree/main/labs/rag-security-trimming)** on Microsoft's reference retrieval stack: document-level security trimming under the user's Entra identity on Azure AI Search. One ACL value changed flips a document between cited and trimmed. |
